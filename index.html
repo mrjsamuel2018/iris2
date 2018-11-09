@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HighCharts Demo with Angular1</title>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.angularjs.org/1.5.8/angular.js"></script>
+  <!-- <script src="http://code.angularjs.org/1.6.0/angular.js"></script> --> 
+  <!-- works with 1.6.0, but has reflection-lib console-warnings -->
+  <script src="ui-router.js"></script>
+  <script src="highcharts.js"></script>
+  <script src="lodash.min.js"></script>
+
+
+
+</head>
+<body ng-app="myApp" >
+
+<div>
+<ul class="nav nav-tabs pull-left">
+    <li ui-sref-active="active" class="active"><a ui-sref="home">Home</a></li>
+    <li ui-sref-active="active" class="active"><a ui-sref="chart">Weather Chart</a></li>
+    <li ui-sref-active="active" class="active"><a ui-sref="pie"> Browsers PieChart</a></li>
+    <li ui-sref-active="active" class="active"><a ui-sref="tv"> TV Channels PieChart</a></li>
+    <li ui-sref-active="active" class="active"><a ui-sref="yql">YQL</a></li>
+</ul>
+
+</div>
+<br />
+<div>
+    <div ui-view></div>
+  </div>
+
+  <script src="app.js"></script>
+<script src="yql.js"></script>
+<script src="yqlCtrl.js"></script>
+<script src="tv.controller.js"></script>
+<script src="homeCtrl.js"></script>
+<script src="pieCtrl.js"></script>
+<script src="chartoneCtrl.js"></script>
+<script src="charttwoCtrl.js"></script>
+<script src="hc.controller.js"></script>
+<script src="hcChart.directive.js"></script>
+<script src="hcPieChartDirective.js"></script>
+</body>
+</html>

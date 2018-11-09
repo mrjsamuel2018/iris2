@@ -1,0 +1,18 @@
+/* Put your css in here */
+
+.pull-left {
+float: initial;
+}
+
+.active{
+  color:red;
+}
+
+body{
+  padding: 15px;
+  background-color: rgb(243, 236, 236);
+}
+
+table, a, p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

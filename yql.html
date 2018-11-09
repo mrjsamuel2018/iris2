@@ -1,0 +1,16 @@
+<p> {{title}} </p>
+
+<!-- {{ yqlShowTablesQueryResponse }}    -->
+<table class="table table-condensed" >
+    <thead>
+        <th>Source</th>
+        <th>URL</th>
+    </thead>
+    <tbody ng-repeat="item in yqlShowTablesQueryResponse">
+    <tr>
+        <td> {{ item['content'] }} </td>
+        <td> {{ item['src'] }} </td>
+
+    </tr>
+    </tbody>
+</table> 
